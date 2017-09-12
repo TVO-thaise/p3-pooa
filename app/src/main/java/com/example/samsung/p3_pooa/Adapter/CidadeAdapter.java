@@ -78,7 +78,7 @@ public class CidadeAdapter extends RecyclerView.Adapter {
         private final TextView descricao;
 
 
-        public LivroViewHolder(View itemView) {
+        public CidadeViewHolder(View itemView) {
             super(itemView);
             nomeCidade = (TextView) itemView.findViewById(R.id.nomeCidade);
             Estado = (TextView) itemView.findViewById(R.id.Estado);

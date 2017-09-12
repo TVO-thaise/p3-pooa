@@ -22,11 +22,11 @@ public class RecyclerViewActivity  extends AppCompatActivity implements ClickRec
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Activity_Recycler_View);
+        setContentView(R.layout.activity_recycler_view);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_Cidade);
 
-        recyclerView.setAdapter(new CidadeAdapter(getLivros(),this,this));
+        recyclerView.setAdapter(new CidadeAdapter(getCidades(),this,this));
         RecyclerView.LayoutManager layout = new LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL, false);
 
@@ -34,13 +34,13 @@ public class RecyclerViewActivity  extends AppCompatActivity implements ClickRec
 
     }
 
-    private List<CidadeDestaque> getLivros(){
+    private List<CidadeDestaque> getCidades(){
         List<CidadeDestaque> cidadeDestaques = new ArrayList<CidadeDestaque>();
         int i =0;
         for(i=0;i<=20;i++){
             String iv = String.valueOf(i);
             CidadeDestaque cidades = new CidadeDestaque("CidadeDestaque".concat(iv),"Estado".concat(iv),"Latitude".concat(iv), "Longitude".concat(iv));
-            cidades.add(cidade);
+            cidadeDestaques.add();
         }
         return cidadeDestaques;
 

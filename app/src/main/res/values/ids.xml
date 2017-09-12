@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_nome_cidade" type="id" />
+    <item name="et_estado_cidade" type="id" />
+    <item name="et_latitude_cidade" type="id" />
+    <item name="et_longitude_cidade" type="id" />
+    <item name="rv_Cidade" type="id" />
+</resources>

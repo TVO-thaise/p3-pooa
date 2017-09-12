@@ -15,19 +15,21 @@ public class CidadeDestaque extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Activity_cidade);
+        setContentView(R.layout.activity_cidade_destaque);
         Intent intent = getIntent();
-        CidadeDestaque livro = (CidadeDestaque) intent.getSerializableExtra("cidade");
+        CidadeDestaque cidade = (CidadeDestaque) intent.getSerializableExtra("cidade");
         EditText nome = (EditText) findViewById(R.id.et_nome_cidade);
         EditText estado = (EditText) findViewById(R.id.et_estado_cidade);
         EditText latitude = (EditText) findViewById(R.id.et_latitude_cidade);
         EditText longitude = (EditText) findViewById(R.id.et_longitude_cidade);
 
-        Object cidade;
+
         nome.setText(cidade.getNomeCidade());
         estado.setText(cidade.getEstado());
         latitude.setText(cidade.getLatitude());
         longitude.setText(cidade.getLongitude());
 
     }
+
+
 }
