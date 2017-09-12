@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 
+import com.example.samsung.p3_pooa.Model.Cidade;
 import com.example.samsung.p3_pooa.R;
 
 /**
@@ -17,7 +18,7 @@ public class CidadeDestaque extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cidade_destaque);
         Intent intent = getIntent();
-        CidadeDestaque cidade = (CidadeDestaque) intent.getSerializableExtra("cidade");
+        Cidade cidade = (Cidade) intent.getSerializableExtra("cidade");
         EditText nome = (EditText) findViewById(R.id.et_nome_cidade);
         EditText estado = (EditText) findViewById(R.id.et_estado_cidade);
         EditText latitude = (EditText) findViewById(R.id.et_latitude_cidade);
@@ -30,6 +31,7 @@ public class CidadeDestaque extends AppCompatActivity {
         longitude.setText(cidade.getLongitude());
 
     }
+
 
 
 }

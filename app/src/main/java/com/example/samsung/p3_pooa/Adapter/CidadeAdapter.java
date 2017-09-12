@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.samsung.p3_pooa.Activity.CidadeDestaque;
+import com.example.samsung.p3_pooa.Model.Cidade;
 import com.example.samsung.p3_pooa.R;
 
 import java.util.List;
@@ -19,13 +20,13 @@ import java.util.List;
 
 public class CidadeAdapter extends RecyclerView.Adapter {
 
-    private List<CidadeDestaque> cidadeDestaques;
+    private List<Cidade> cidades;
     private Context context;
     private static ClickRecyclerViewListener clickRecyclerViewListener;
 
-    public CidadeAdapter(List<CidadeDestaque> cidadeDestaques, Context context, ClickRecyclerViewListener clickRecyclerViewListener) {
+    public CidadeAdapter(List<Cidade> cidades, Context context, ClickRecyclerViewListener clickRecyclerViewListener) {
 
-        this.cidadeDestaques = cidadeDestaques;
+        this.cidades = cidades;
         this.context = context;
         this.clickRecyclerViewListener = clickRecyclerViewListener;
     }
@@ -35,7 +36,7 @@ public class CidadeAdapter extends RecyclerView.Adapter {
                                                       int viewType) {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.item_cidade, parent, false);
-        LivroViewHolder cidadeViewHolder = new LivroViewHolder(view);
+        CidadeViewHolder cidadeViewHolder = new CidadeViewHolder(view);
         return cidadeViewHolder;
     }
 
@@ -45,13 +46,13 @@ public class CidadeAdapter extends RecyclerView.Adapter {
 
         CidadeViewHolder holder = (CidadeViewHolder) viewHolder;
 
-        CidadeDestaque cidadeDestaque = cidadeDestaques.get(position) ;
+        Cidade cidade = cidades.get(position) ;
 
-        holder.nomeCidade.setText(cidadeDestaque.getNomeCidade());
-        holder.Estado.setText(cidadeDestaque.getEstado());
-        holder.latitude.setText(cidadeDestaque.getLatitude());
-        holder.longitude.setText(cidadeDestaque.getLongitude());
-        Log.i("------XXXXXXXXX--", cidadeDestaque.getNomeCidade());
+        holder.nomeCidade.setText(cidade.getNomeCidade());
+        holder.Estado.setText(cidade.getEstado());
+        holder.latitude.setText(cidade.getLatitude());
+        holder.longitude.setText(cidade.getLongitude());
+        Log.i("------XXXXXXXXX--", cidade.getNomeCidade());
 
 
     }
@@ -59,23 +60,25 @@ public class CidadeAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
 
-        return cidadeDestaques.size();
+        return cidades.size();
     }
 
     private void updateItem(int position) {
 
     }
 
-    // Método responsável por remover um usuário da lista.
+    // MÃ©todo responsÃ¡vel por remover um usuÃ¡rio da lista.
     private void removerItem(int position) {
 
     }
 
-    public class LivroViewHolder extends RecyclerView.ViewHolder {
+    public class CidadeViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView nomeLivro;
-        private final TextView nomeAutor;
-        private final TextView descricao;
+        private final TextView nomeCidade;
+        private final TextView Estado;
+        private final TextView latitude;
+        private final TextView longitude;
+
 
 
         public CidadeViewHolder(View itemView) {
@@ -87,7 +90,7 @@ public class CidadeAdapter extends RecyclerView.Adapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    clickRecyclerViewListener.onClick(cidadeDestaques.get(getLayoutPosition()));
+                    clickRecyclerViewListener.onClick(cidades.get(getLayoutPosition()));
 
                 }
             });
