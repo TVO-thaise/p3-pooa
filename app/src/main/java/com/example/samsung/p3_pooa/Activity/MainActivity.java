@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-        private Context getContext(){
-            return this;
-        }
+    private Context getContext() {
+        return this;
+    }
 }
+
