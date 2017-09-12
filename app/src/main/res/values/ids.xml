@@ -5,4 +5,9 @@
     <item name="et_latitude_cidade" type="id" />
     <item name="et_longitude_cidade" type="id" />
     <item name="rv_Cidade" type="id" />
+    <item name="et_nome_pontoTuristico" type="id" />
+    <item name="et_estado_pontoTuristico" type="id" />
+    <item name="et_latitude_pontoTuristico" type="id" />
+    <item name="et_longitude_pontoTuristico" type="id" />
+    <item name="et_azimute_pontoTuristico" type="id" />
 </resources>

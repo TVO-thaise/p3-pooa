@@ -15,7 +15,7 @@ public class PontoTuristico implements Serializable {
     private final String Azimute;
 
 
-    public PontoTuristico(String nomeCidade, String Estado, String latitude, String longitude,String azimute) {
+    public PontoTuristico(String nomeCidade, String Estado, String latitude, String longitude, String azimute) {
 
         this.nomePontoTuristico = nomeCidade;
         this.Estado = Estado;
@@ -25,7 +25,7 @@ public class PontoTuristico implements Serializable {
 
     }
 
-    public String getNomePontoTuristicoe() {
+    public String getNomePontoTuristico() {
         return nomePontoTuristico;
     }
 
@@ -47,4 +47,5 @@ public class PontoTuristico implements Serializable {
 
 
 
+}
 

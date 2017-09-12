@@ -35,7 +35,7 @@ public class PontoTuristicoAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                       int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.item_pontoTuristico, parent, false);
+                .inflate(R.layout.item_pontoturistico, parent, false);
         PontoTuristicoAdapter.PontoTuristicoViewHolder pontoTuristicoViewHolder = new PontoTuristicoAdapter.PontoTuristicoViewHolder(view);
         return pontoTuristicoViewHolder;
     }
@@ -52,7 +52,7 @@ public class PontoTuristicoAdapter extends RecyclerView.Adapter {
         holder.Estado.setText(pontoTuristico.getEstado());
         holder.latitude.setText(pontoTuristico.getLatitude());
         holder.longitude.setText(pontoTuristico.getLongitude());
-        holder.azimute.setText(pontoTuristico.getAzimute());
+        holder.Azimute.setText(pontoTuristico.getAzimute());
         Log.i("------XXXXXXXXX--", pontoTuristico.getNomePontoTuristico());
 
 
@@ -83,7 +83,7 @@ public class PontoTuristicoAdapter extends RecyclerView.Adapter {
 
 
 
-        public CidadeViewHolder(View itemView) {
+        public PontoTuristicoViewHolder(View itemView) {
             super(itemView);
             nomePontoTuristico = (TextView) itemView.findViewById(R.id.nomePontoTuristico);
             Estado = (TextView) itemView.findViewById(R.id.Estado);
@@ -93,7 +93,7 @@ public class PontoTuristicoAdapter extends RecyclerView.Adapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    clickRecyclerViewListener.onClick(pontoTuristico.get(getLayoutPosition()));
+                    clickRecyclerViewListener.onClick(pontoTuristicos.get(getLayoutPosition()));
 
                 }
             });
