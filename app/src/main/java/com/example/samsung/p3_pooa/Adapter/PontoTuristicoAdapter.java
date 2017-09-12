@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.samsung.p3_pooa.Model.Cidade;
+import com.example.samsung.p3_pooa.Model.PontoTuristico;
 import com.example.samsung.p3_pooa.R;
 
 import java.util.List;

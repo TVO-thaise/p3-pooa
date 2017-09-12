@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samsung.p3_pooa.Activity.CidadeDestaque">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_nome_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ponto Turístico:"
+            />
+
+        <EditText
+            android:id="@+id/et_nome_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="none|text"
+            android:text="Nome da Ponto Turistico"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_estado_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado:"
+            />
+
+        <EditText
+            android:id="@+id/et_estado_pt_destaque"
+            android:layout_width="220dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nome do Estado"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_latitude_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: "
+            />
+
+        <EditText
+            android:id="@+id/et_latitude_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="X"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_longitude_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: "
+            />
+
+        <EditText
+            android:id="@+id/et_longitude_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="Y"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_azimute_pt_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azimute: "
+            />
+
+        <EditText
+            android:id="@+id/et_azimute_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="Valor"
+            />
+    </LinearLayout>
+</LinearLayout>

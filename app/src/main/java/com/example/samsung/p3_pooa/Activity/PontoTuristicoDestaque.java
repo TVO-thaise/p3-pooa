@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 
+import com.example.samsung.p3_pooa.Model.PontoTuristico;
 import com.example.samsung.p3_pooa.R;
 
 /**
@@ -15,9 +16,9 @@ public class PontoTuristicoDestaque extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pontoTuristico_destaque);
+        setContentView(R.layout.activity_pontoturistico_destaque);
         Intent intent = getIntent();
-        PontoTuristico  pontoTuristico = (PontoTuristico) intent.getSerializableExtra("pontoTuristico");
+        PontoTuristico pontoTuristico = (PontoTuristico) intent.getSerializableExtra("pontoTuristico");
         EditText nome = (EditText) findViewById(R.id.et_nome_pontoTuristico);
         EditText estado = (EditText) findViewById(R.id.et_estado_pontoTuristico);
         EditText latitude = (EditText) findViewById(R.id.et_latitude_pontoTuristico);

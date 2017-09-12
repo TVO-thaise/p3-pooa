@@ -12,10 +12,10 @@ public class PontoTuristico implements Serializable {
     private final String Estado;
     private final String latitude;
     private final String longitude;
-    private final String Azimute = null;
+    private final String Azimute;
 
 
-    public PontoTuristico(String nomeCidade, String Estado, String latitude, String longitude,Integer azimute) {
+    public PontoTuristico(String nomeCidade, String Estado, String latitude, String longitude,String azimute) {
 
         this.nomePontoTuristico = nomeCidade;
         this.Estado = Estado;
@@ -41,7 +41,10 @@ public class PontoTuristico implements Serializable {
         return longitude;
     }
 
-    public Integer getAzimute() { return  Azimute; }
+    public String getAzimute() {
+        return Azimute;
+    }
+
 
 
 
