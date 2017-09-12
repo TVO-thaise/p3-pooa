@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.samsung.p3_pooa.Adapter.CidadeAdapter;
 import com.example.samsung.p3_pooa.Adapter.ClickRecyclerViewListener;
+import com.example.samsung.p3_pooa.Model.Cidade;
 import com.example.samsung.p3_pooa.R;
 
 import java.util.ArrayList;
@@ -34,23 +35,23 @@ public class RecyclerViewActivity  extends AppCompatActivity implements ClickRec
 
     }
 
-    private List<CidadeDestaque> getCidades(){
-        List<CidadeDestaque> cidadeDestaques = new ArrayList<CidadeDestaque>();
+    private List<Cidade> getCidades(){
+        List<Cidade> cidades = new ArrayList<Cidade>();
         int i =0;
         for(i=0;i<=20;i++){
             String iv = String.valueOf(i);
-            CidadeDestaque cidades = new CidadeDestaque("CidadeDestaque".concat(iv),"Estado".concat(iv),"Latitude".concat(iv), "Longitude".concat(iv));
-            cidadeDestaques.add();
+            Cidade cidade = new Cidade("CidadeDestaque".concat(iv),"Estado".concat(iv),"Latitude".concat(iv), "Longitude".concat(iv));
+            cidades.add(cidade);
         }
-        return cidadeDestaques;
+        return cidades;
 
     }
 
     @Override
     public void onClick(Object object) {
-        CidadeDestaque cidadeDestaque = (CidadeDestaque) object;
+        Cidade cidade = (Cidade) object;
         Intent intent = new Intent(this, CidadeDestaque.class);
-        intent.putExtra("cidadeDestaque", cidadeDestaque);
+        intent.putExtra("cidade", cidade);
         startActivity(intent);
 
     }
