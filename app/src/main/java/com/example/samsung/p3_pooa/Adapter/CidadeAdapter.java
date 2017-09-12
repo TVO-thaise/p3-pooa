@@ -81,7 +81,7 @@ public class CidadeAdapter extends RecyclerView.Adapter {
         public LivroViewHolder(View itemView) {
             super(itemView);
             nomeCidade = (TextView) itemView.findViewById(R.id.nomeCidade);
-            nomeEstado = (TextView) itemView.findViewById(R.id.nomEstado);
+            Estado = (TextView) itemView.findViewById(R.id.Estado);
             latitude = (TextView) itemView.findViewById(R.id.latitude);
             longitude = (TextView) itemView.findViewById(R.id.longitude);
             itemView.setOnClickListener(new View.OnClickListener() {

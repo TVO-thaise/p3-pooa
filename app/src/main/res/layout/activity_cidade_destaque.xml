@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,57 +9,63 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="368dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
         <TextView
-            android:id="@+id/tv_nome_livro_destaque"
+            android:id="@+id/tv_nome_cidade_destaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome"
+            android:text="Cidade:"
             />
 
         <EditText
-            android:id="@+id/et_nome_livro_destaque"
+            android:id="@+id/et_nome_cidade_destaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:inputType="none|text"
-            android:text="Name"
+            android:text="Nome da Cidade"
             />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
         <TextView
-            android:id="@+id/tv_autor_livro_destaque"
+            android:id="@+id/tv_estado_cidade_destaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Autor"
+            android:text="Estado:"
             />
 
         <EditText
-            android:id="@+id/et_autor_livro_destaque"
+            android:id="@+id/et_estado_cidade_destaque"
             android:layout_width="220dp"
             android:layout_height="54dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:text="Nome do Estado"
             />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
         <TextView
-            android:id="@+id/tv_descricao_livro_destaque"
+            android:id="@+id/tv_latitude_cidade_destaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Descricao"
+            android:text="Latitude: "
             />
 
         <EditText
-            android:id="@+id/et_descricao_livro_destaque"
+            android:id="@+id/et_latitude_livro_destaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -67,6 +73,26 @@
             android:text="Name"
             />
     </LinearLayout>
-</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tv_longitude_cidade_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: "
+            />
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/et_longitude_livro_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="Name"
+            />
+    </LinearLayout>
+</RelativeLayout>
